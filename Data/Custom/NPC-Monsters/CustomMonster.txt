@@ -1,0 +1,80 @@
+//----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com
+//->>  FB: @mspromu
+//->>  © 2020 - 2022 MuServerPro Team
+//----------------------------------------------------------------------------------------------------------------
+
+//----------------------------
+// Monster Additional Option
+//------------------------------------------------------------------------------------------------------------------
+// [Monster.txt] [-1/0~114]  [0~64534]  [0~64534] [0~64534] [0~64534][0~64534]  [0~64534]   [0~9999]
+// MonsterID     Mapnumber	 MaxLife    DamageMin DamageMax	Defense	 AttackRate DefenseRate ExperienceRate  Comment
+//------------------------------------------------------------------------------------------------------------------
+0
+//	20		     -1		     100	  1000		1000	  1000		1000	   1000	       100			   //test yeti all maps
+end
+
+
+
+//=========
+// Info:
+//=========
+// Deberan cargar el monster en el index Siguiente (1), para que funcionen los otros index (2-3)
+
+//-----------------
+// Monster Reward
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//							[Message.txt]
+// [Monster.txt] [-1/0~114] [0~64534]    [0-1]  	[           -1/0~2000000000           ] [           -1/0~2000000000           ] [           -1/0~2000000000           ]
+// MonsterID     Mapnumber	KillMessage  SystemCoin WCCoins_0 WCCoins_1 WCCoins_2 WCCoins_3 WPCoins_0 WPCoins_1 WPCoins_2 WPCoins_3 GPoints_0 GPoints_1 GPoints_2 GPoints_3
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1
+// 6			 -1	  	    -1			 0			-1		 -1			-1		  -1		-1		  -1		-1		  -1		-1		  -1		-1		  -1
+end
+
+
+//----------------------
+// SummonMonster Reward
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//							[Monster.txt]					[Monster.txt]					  [          		MonsterID 1                 ] [          		MonsterID 2                 ]	
+// [Monster.txt] [-1/0~114] [-1/0~1023]   [0~50]		    [-1/0~1023]    [0~50]             [0~100]     [0~100]     [0~100]     [0~100]		[0~100]     [0~100]     [0~100]     [0~100]	
+// MonsterID     Mapnumber	SummonMonster SummonMonterCount SummonMonster2 SummonMonterCount2 SummonRate0 SummonRate1 SummonRate2 SummonRate3 SummonRate0 SummonRate1 SummonRate2 SummonRate3	
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2
+// 20			 0			18			  1					-1			   -1				  100		  100		  100		  100		  100	      100		  100		  100
+end
+
+
+//=========
+// [Ref-1]
+//=========
+// Action: 
+//        - 0: Solo agrega VIP a los que no tienen (Se agrega el nivel que se pone en TargetVipLevel) // It only adds VIP to those who do not have (The level that is put in TargetVipLevel is added)		
+//        - 1: Permite actualizar el VIP o agregar en caso de que no tengan (Si el nivel es mayor al del TargetVipLevel no hace nada) // It allows updating the VIP or adding in case they do not have (If the level is higher than the TargetVipLevel it does nothing)
+//        - 2: Permite sumar dias de VIP solo a los que ya lo son (Tiene que coincidir el nivel con el TargetVipLevel) // It allows adding VIP days only to those that already are (The level must match the TargetVipLevel)	
+
+//=========
+// [Ref-2]
+//=========
+// EnableMove: 0 Off - 1 On - 2 Kalima Gate
+
+//=========
+// [Ref-3]
+//=========
+// TargetGate: Gate ID / Kalima Level
+
+//-------------------
+// Map Reward Addons
+//--------------------------------------------------------------------------------------------------------------------------------------
+//									   [Ref-1]  	 				     [Ref-2]    [Ref-3]
+// [Monster.txt] [-1/0~114] [-1/0~100] [0~2]   [0~3]		  [0~999999] [0~2]      [Gate 0~1024/KalimaLeve 1~7]
+// MonsterID     Mapnumber	VipRate    Action  TargetVipLevel Days       EnableMove TargetGate
+//--------------------------------------------------------------------------------------------------------------------------------------
+3
+// 3		     -1			100	 	   1	   3		      3			 1			120
+end
+
+
+
+

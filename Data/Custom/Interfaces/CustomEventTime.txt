@@ -1,0 +1,83 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com 
+//->>  FB: @mspromu
+//->>  2020 - 2023 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+//-----------------------------------------------------------------------------------------------------------------
+// CustomEventTime                                
+//-----------------------------------------------------------------------------------------------------------------
+// Info:                                          // Info:
+// El Orden que se le de en los Grupos            // The Order that is given in the Groups
+// es el orden que saldra en el Lado Cliente      // is the order that will appear on the Client Side
+// !Cantidad Maxima por Pagina: 20 Items!         // ! Maximum Quantity per Page: 20 Items!
+// Cooordinar con encoder \Events\EventTimeName   // Coordinate with encoder \Events\EventTimeName
+//------------------------------------------------------------------------------------------------------------------
+
+//------------------------------------------------
+// Pagina 1 - Webzen Events & Custom Events
+//------------------------------------------------
+//  [0~19]    [1~10]
+//	Event	  Pagina  Comment
+//------------------------------------------------
+	0		  1		  //Blood Castle
+	1		  1		  //Devil Square
+	2		  1		  //Chaos Castle
+	3		  1		  //Illusion Temple
+	4		  1		  //Moss Merchant
+	5		  1		  //TvT Event
+	6		  1		  //King of MU
+	7		  1		  //Online Lottery
+	8		  1		  //Custom Quiz
+	9		  1		  //Custom Bonus
+	10		  1		  //Custom Drop
+	11		  1		  //Loren Deep
+
+//==============
+// [Ref-1]
+//==============
+//Info: invasion in InvasionManager 0 = 20 (Skeleton King) / 1 = 21 (Red Dragon) /Etc
+	
+//------------------------------------------------
+// Pagina 2 - Invasions
+//------------------------------------------------
+//  [Ref-1]
+//  [20~119]  [1~10]
+//	Event	  Pagina  Comment
+//------------------------------------------------
+	20		  2		  //Skeleton King
+	21		  2		  //Red Dragon
+	22		  2		  //Golden Dragon
+	23		  2		  //White Wizard
+	24		  2		  //New Year
+	25		  2		  //Rabbits
+	26		  2		  //Summer Event
+	27		  2		  //Cursed Santa
+	28		  2		  //Medussa
+	29		  2		  //Demons
+	34		  2		  //MSPro BC
+	35		  2		  //MSPro DS
+	36		  2		  //MSPro CC
+	
+//==============
+// [Ref-2]
+//==============
+//Info: CustomArena ID 0 = 120 (Survivor) / 1 = 121 (DM x DM) /Etc	
+	
+//------------------------------------------------
+// Pagina 3 - Arenas
+//------------------------------------------------
+//  [Ref-2]
+//  [120~149] [1~10]
+//	Event	  Pagina  Comment
+//------------------------------------------------
+	120		  3		  //Survivor
+	121		  3		  //DM x DM
+	122		  3		  //GM x GM
+	123		  3		  //BM x BM
+	124		  3		  //FM x FM
+	125		  3		  //LE x LE
+	126		  3		  //ELF x ELF
+	127		  3		  //SUM x SUM
+end

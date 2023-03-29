@@ -1,0 +1,142 @@
+//----------------------------------------------------------------------------------------------------------
+// MSPro - Reset Interface System
+// Update: V8
+// Version: 1.0
+// Ultima modificación: 03/06/2021
+//----------------------------------------------------------------------------------------------------------
+
+//----------------------------------------------------------------------------------------------------------
+// Reset Requeriments - Seccion 0
+//----------------------------------------------------------------------------------------------------------
+// (1) Reset Index
+// (2) Tipo de Reset		--> 0 Reset / 1 Master Resetx
+// (3) AccountLevel    		--> (-1: Todos / 0 ~ 4 Nivel de Cuenta)                                    / (-1: All / 0 ~ 4 Account Level)
+// (4) Configuracion 		--> Index de la Seccion 1 (NO se puede Desactivar, asignar Index si o si)  / Index of Section 1 (CANNOT be Disabled, assign Index ALWAYS)
+// (5) Level o Resets  		--> (Level para Reset) / (Resets para Master Reset)                        / (Level for Reset) / (Reset for Master Reset)
+// (6) Rango Resets Min		--> Resets / Master Reset                                                  / Resets / Master Reset
+// (7) Rango Resets Max		--> Resets / Master Reset                                                  / Resets / Master Reset
+// (8) WCCoins	 			--> -1 Desactivado                                                         / -1 Disabled
+// (9) WPCoins 				--> -1 Desactivado                                                         / -1 Disabled
+// (10) GPCoins 			--> -1 Desactivado                                                         / -1 Disabled
+// (11) Zen Tipo			--> -1 Desactivado / 0: Quita Zen  / 1: Quita Zen * Reset o M.Reset        / -1 Disabled / 0: Remove Zen / 1: Remove Zen * Reset or M.Reset
+// (12) Cantidad de Zen		--> MAX: 2.000.000.000
+// (13) Items Requeridos	--> Index de la Seccion 2 (-1 Desactiva)                                   / Section 2 Index (-1 Disable)
+// (14) Recompenzas Reset	--> Index de la Seccion 3 (-1 Desactiva)                                   / Section 3 Index (-1 Disable)
+//--------------------------------------------------------------------------------------------------------------------
+//		(1)		(2)		(3)		(4)		(5)		(6)		(7)		(8)		(9)		(10)	(11)	(12)	(13)	(14)
+//--------------------------------------------------------------------------------------------------------------------
+0
+		0		0		-1		1		400		0		999		-1		-1		-1		0		500000		1		1
+end
+
+//----------------------------------------------------------------------------------------------------------
+// Configuración Reset - Seccion 1
+//----------------------------------------------------------------------------------------------------------
+// (1) Index                (Valor 4 de la Seccion 0) / (Value 4 from Section 0)
+// (2) Reset Stats			(0 Desactivado / 1 Activado) /(0 Off - 1 On)
+// (3) Reset Command 		(0 Desactivado / 1 Activado) /(0 Off - 1 On)
+// (4) Reset LevelUpPoints	(0 Desactivado / 1 Activado) /(0 Off - 1 On)
+// (5) Reset Inventory 		(0 Desactivado / 1: Solo Inventory / 2: Inventario + Items Equipados) / (0 Disabled / 1: Inventory Only / 2: Inventory + Equipped Items)
+// (6) Reset Skills  		(0 Desactivado / 1 Activado) /(0 Off - 1 On)
+// (7) Reset Quest          (0 Desactivado / 1 Activado) /(0 Off - 1 On)
+// (8) Reset SkillTree		(0 Desactivado / 1 Activado) /(0 Off - 1 On)
+// (9) Reset GoblinPoints 	(0 Desactivado / 1 Activado) /(0 Off - 1 On)
+// (10) Mover al Safe 		(0 Desactivado / 1 Activado) /(0 Off - 1 On)
+//----------------------------------------------------------------------------------------------------------
+//		(1)		(2)		(3)		(4)		(5)		(6)		(7)		(8)		(9)		(10)
+//----------------------------------------------------------------------------------------------------------
+1
+		1		1		0		1		0		0		0		0		0		1
+end
+
+//----------------------------------------------------------------------------------------------------------
+// Items Requeridos Reset - Seccion 2
+//----------------------------------------------------------------------------------------------------------
+// (1) Index
+// (2) Tipo						(0: Swords, 1: Axe, etc...)                            	 	/ (0: Swords, 1: Axes, etc ...)
+// (3) Index					(Item Index, de 0 a 511)                               		/ (Item Index, from 0 to 511)
+// (4) Nivel del Item			(-1 No controla Nivel, 0 a 15: Controla Nivel del Item)		/ (-1 Does not control Level, 0 to 15: Controls Item Level)
+// (5) Opcion (Life)			(-1 No controla Opcion, 0: Sin Opcion / 1: Con Opcion) 		/ (-1 Does not control Option, 0: Without Option / 1: With Option)
+// (6) Skill					(-1 No controla Skill, 0: Sin Skill / 1: Con Skill)    		/ (-1 Does not control Skill, 0: Without Skill / 1: With Skill)
+// (7) Luck						(-1 No controla Luck, 0: Sin Luck / 1: Con Luck)       		/ (-1 Does not control Luck, 0: Without Luck / 1: With Luck)
+// (8) Excellent				(-1 No controla, 0 ~ 63)        							/ (-1 Does not control, 0 ~ 63)
+// (9) Durabilidad				(-1 No controla, 0 ~ 255)        							/ (-1 Does not control, 0: 0 ~ 255)
+// (10) Cantidad de Items 																	/ Quantity of Items
+//----------------------------------------------------------------------------------------------------------
+//		(1)		(2)		(3)		(4)		(5)		(6)		(7)		(8)		(9)		(10)
+//----------------------------------------------------------------------------------------------------------
+2
+		1		11		0		-1		0		0		0	0		0		1
+end
+
+//----------------------------------------------------------------------------------------------------------
+// Recompenzas Reset - Seccion 3
+//----------------------------------------------------------------------------------------------------------
+// (1) Index
+// (2) Tipo LvlPoints/Type Points	--> (0: Puntos / 1: Puntos * Reset o M.Reset / 2 (Solo M.Reset): M.Points / 3 (Solo M.Reset): M.Points * M.Resets) */* (0: Points / 1: Points * Reset or M.Reset / 2 (M.Reset only): M.Points / 3 (M.Reset only): M.Points * M.Resets)
+// (3) Cantidad LvlPoints 		    --> Cantidad de Puntos /Amount of Points
+// (4) WCCoins	 				    --> -1 Desactivado /-1 Disabled
+// (5) WPCoins	 				    --> -1 Desactivado /-1 Disabled
+// (6) GPCoins	 				    --> -1 Desactivado /-1 Disabled
+// (7) BagID					    --> ID de la Itembag configurada en EventItemBagManager.txt /ID of the Itembag configured in EventItemBagManager.txt
+//----------------------------------------------------------------------------------------------------------
+//		(1)		(2)		(3)		(4)			(5)		(6)		(7)
+//----------------------------------------------------------------------------------------------------------
+3
+		1		1		500		-1		-1		-1		-1
+end
+
+//----------------------------------------------------------------------------------------------------------
+// Regalos segun Numero de Reset
+//----------------------------------------------------------------------------------------------------------
+// (1) Tipo de Reset / Type Reset --> 0 Reset / 1 Master Reset
+// (2) Numero de Reset / M.Reset / Number Reset
+// (3) AccountLevel    	      		--> (-1: Todos / 0 ~ 3 Nivel de Cuenta)                                       / (-1: All / 0 ~ 3 Account Level)
+// (4) BagID						--> -1 Desactivado / ID de la Itembag configurada en EventItemBagManager.txt  / -1 Disabled / ID of the Itembag configured in EventItemBagManager.txt
+// (5) Item Count					--> Cantidad de veces que ejecuta el ItemBag                                  / Number of times ItemBag will be Executed
+// (6) Cantidad LvlPoints			--> -1 Desactivado                                                            / -1 Disabled
+// (7) WCCoins 			      		--> 0 Desactivado                                                             / 0 Disabled
+// (8) WPCoins 			      		--> 0 Desactivado                                                             / 0 Disabled
+// (9) GPCoins 			      		--> 0 Desactivado                                                             / 0 Disabled
+// (10) Cantidad de Zen 	      	--> -1 Desactivado                                                            / -1 Disabled
+//----------------------------------------------------------------------------------------------------------
+//		(1)		(2)		(3)		(4)		(5)		(6)		(7)		(8)		(9)		(10)
+//----------------------------------------------------------------------------------------------------------
+4
+		1		2		-1		5		-1		-1		500		500		500		500
+		0		2		-1		5		-1		-1		500		500		500		500
+		0		3		-1		6		-1		-1		1000		1000		1000		1000
+end
+
+//----------------------------------------------------------------------------------------------------------
+// Limite de Resets (Hasta el Proximo Reseteo) - NO AGREGAR LINEAS, SOLO CONFIGURAR
+//----------------------------------------------------------------------------------------------------------
+// (1) Tipo de Reset		--> 0 Reset / 1 Master Reset
+// (2) Limite de Resets		--> Normal
+// (3) Limite de Resets		--> VIP 1
+// (4) Limite de Resets		--> VIP 2
+// (5) Limite de Resets		--> VIP 3
+//----------------------------------------------------------------------------------------------------------
+//		(1)		(2)		(3)		(4)		(5)
+//----------------------------------------------------------------------------------------------------------
+5
+		0		-1		-1		-1		-1
+		1		-1		-1		-1		-1
+end
+
+//----------------------------------------------------------------------------------------------------------
+// Cronograma de Reseteo de Contadores - NO AGREGAR LINEAS, SOLO CONFIGURAR
+//----------------------------------------------------------------------------------------------------------
+// (1) Tipo de Reset		--> 0 Reset / 1 Master Reset
+// (2) Mes					--> (0 a 11)
+// (3) Dia					--> (0 a 30)
+// (4) Dia de la Semana 	--> (0 a 7)
+// (5) Hora					--> (0 a 23)
+// (5) Minutos				--> (0 a 59)
+//----------------------------------------------------------------------------------------------------------
+//		(1)		(2)		(3)		(4)		(5)		(6)
+//----------------------------------------------------------------------------------------------------------
+6
+		0		-1		-1		-1		20		33
+		1		-1		-1		-1		20		33
+end
