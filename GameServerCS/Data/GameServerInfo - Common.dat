@@ -88,6 +88,11 @@ ComboMaxTimeWaitCombination 	= 10 			;Tiempo Max de espera entre Skills (En Segu
 EnableCastleSiegeSkillAllMap	= 1
 
 ;==================================================
+; Enable InfinityArrow Skill at Level 1 [+V13]
+;==================================================
+EnableInfinityArrowAtLevel1     = 0
+
+;==================================================
 ; Advanced Money Drop Settings
 ; If > 0 enable the system
 ; Money Drop = (MoneyValue*MonterLevel) + % ItemBonus
@@ -196,7 +201,10 @@ ElfBufferDamageConstB 		= 5
 ElfBufferDefenseConstA 		= 45
 ElfBufferDefenseConstB 		= 3
 
-ElfBufferDurationTime       = 1800 ; 3600 = 1 HR 
+ElfBufferDurationTime_AL0   = 1800 ; 3600 = 1 HR 
+ElfBufferDurationTime_AL1   = 1800 ; 3600 = 1 HR 
+ElfBufferDurationTime_AL2   = 1800 ; 3600 = 1 HR 
+ElfBufferDurationTime_AL3   = 1800 ; 3600 = 1 HR 
 
 ;==================================================
 ; Experience Settings

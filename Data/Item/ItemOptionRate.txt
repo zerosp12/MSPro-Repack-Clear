@@ -171,19 +171,19 @@ end
 end
 
 5
-//---------------------------------------
-//        [AccOff][Acc-1] [Acc-2]
-//Index   Rate0   Rate1   Rate2   Comment
-//---------------------------------------
-0         10000   0       0       //Set Option (Common)
-1         10000   0       0       //Set Option (Exc)
-2         0       8000    2000    //Set Option (Set)
-9         10000   0       0       //Set Option (MossMerchant)
-10        0       7000    3000    //Set Option (Lucky)
-11        10000   0       0       //Set Option (EventItemBag) (0)
-12        0       10000   0       //Set Option (EventItemBag) (1)
-13        0       0       10000   //Set Option (EventItemBag) (2)
-14        0       5000    5000    //Set Option (EventItemBag) (1~2)
+//-----------------------------------------------------------------
+//        [AccOff] [Acc1+5] [Acc1+10] [Acc2+5] [Acc2+10]
+//Index   Rate0    Rate1    Rate2     Rate1   Rate2        Comment
+//-----------------------------------------------------------------
+0         10000    0        0         0       0            //Set Option (Common)
+1         10000    0        0         0       0            //Set Option (Exc)
+2         0        8000     2000      8000    2000         //Set Option (Set)
+9         10000    0        0         0       0            //Set Option (MossMerchant)
+10        0        7000     3000      7000    3000         //Set Option (Lucky)
+11        10000    0        0         0       0            //Set Option (EventItemBag) (0)
+12        0        10000    0         10000   0            //Set Option (EventItemBag) (1)
+13        0        0        10000     0       10000        //Set Option (EventItemBag) (2)
+14        0        5000     5000      5000    5000         //Set Option (EventItemBag) (1~2)
 end
 
 6
